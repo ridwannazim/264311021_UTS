@@ -3,7 +3,8 @@
 INSERT INTO pengguna (id_pengguna, id_alamat, nama, no_telepon, email, password, kota) VALUES
 (1, NULL, 'adit', '081234567890', 'budi@gmail.com', 'budi_123', 'Madiun'),
 (2, NULL, 'sopo',  '082345678901', 'siti@gmail.com', 'siti_456', 'Surabaya'),
-(3, NULL, 'jarwo',  '083456789012', 'andi@gmail.com', 'andi_789', 'Malang');
+(3, NULL, 'jarwo',  '083456789012', 'andi@gmail.com', 'andi_789', 'Malang'),
+(4, NULL, 'denis', '081234567543', 'denis@gmail.com', 'denis_212', 'ngawi');
 
 -- insert ke tabel admin
 INSERT INTO admin (id_admin, nama, email, password) VALUES
@@ -15,7 +16,8 @@ INSERT INTO admin (id_admin, nama, email, password) VALUES
 INSERT INTO setoran (id_setoran, id_pengguna, id_admin, tanggal_setoran, status_setoran, foto_bukti) VALUES
 (1, 1, 1, '2026-10-20 09:15:00', 'disetujui',  'bukti_001.jpg'),
 (2, 2, 2, '2026-10-21 13:30:00', 'menunggu', 'bukti_002.jpg'),
-(3, 3, 3, '2026-10-22 08:45:00', 'ditolak', 'bukti_003.jpg');
+(3, 3, 3, '2026-10-22 08:45:00', 'ditolak', 'bukti_003.jpg'),
+(4, 4, 1, '2026-10-21 11:15:00', 'disetujui',  'bukti_004.jpg');
 
 -- READ
 SELECT * FROM pengguna;
