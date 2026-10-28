@@ -2,7 +2,7 @@
 CREATE TABLE dompet (
   id_dompet    INT AUTO_INCREMENT PRIMARY KEY,
   id_pengguna  INT NOT NULL UNIQUE,
-  saldo        DECIMAL(14,2) NOT NULL DEFAULT 0,
+  saldo        DECIMAL(14,2) NOT NULL DEFAULT 0
 );
 
 -TABEL penarikan
@@ -16,7 +16,7 @@ CREATE TABLE penarikan (
   status_penarikan    VARCHAR(15) NOT NULL DEFAULT 'diajukan',
   tanggal_pengajuan   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   tanggal_verifikasi  DATETIME NULL,
-  catatan             VARCHAR(255) NULL,
+  catatan             VARCHAR(255) NULL
 );
 
 -TABEL mutasi_saldo
@@ -27,5 +27,5 @@ CREATE TABLE mutasi_saldo (
   id_penarikan  INT NULL,
   jenis_mutasi  VARCHAR(6) NOT NULL,
   nominal       DECIMAL(14,2) NOT NULL,
-  waktu         DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  waktu         DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
